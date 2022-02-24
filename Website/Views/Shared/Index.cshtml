@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Davos Portfolio">
+        <meta name="keywords" content="Portfolio, HTML, CSS, JavaScript">
+        <meta name="author" content="David">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/homeStyles.css">
+        <script src="~/js/site.js"></script>
+    </head>
+<body id = indexBody>
+
+<h1 class="IndexHeaders1">My Hub</h1>
+
+<div class =blocks>
+    <div class ="wrapper">
+        <div class="block1" id="div1">
+            <h3 class="IndexHeaders3">About Me</h3>
+            <p class="IndexP">Here you can find certifications, work experience and my hobbies</p>
+            <a class="box" id="b1" asp-controller="Primary" asp-action="Resume">Click Here</a>
+        </div>
+    </div>
+     
+    <div class ="wrapper">
+        <div class="block2" id="div2">
+            <h3 class="IndexHeaders3">Portfolio</h3>
+            <p class="IndexP">Solo projects I have done or are doing!</p>
+            <a class="box" id="b2" href="./Portfolio.html">Click Here</a>
+        </div>
+    </div>
+
+    <div class ="wrapper">
+        <div class="block3" id="div3">
+            <h3 class="IndexHeaders3">Reach Out</h3>
+            <p class="IndexP">My contact info</p>
+            <a class="box" id="b3" asp-controller="Primary" asp-action="ContactInfo">Click Here</a>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
+
